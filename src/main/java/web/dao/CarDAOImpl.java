@@ -25,9 +25,4 @@ public class CarDAOImpl implements CarDAO {
     public List<Car> getAllCars() {
         return cars;
     }
-
-    @Override
-    public List<Car> getCarsByCount(int count) {
-        return cars.stream().limit(count).toList();
-    }
 }
